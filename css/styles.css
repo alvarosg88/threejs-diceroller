@@ -1,0 +1,125 @@
+html, body { margin: 0; padding: 0; overflow: hidden; }
+canvas {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100;
+}
+.controls-box{
+    position: fixed; 
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0,0,0,.5);
+    padding: 20px;
+    text-align: center;
+} 
+.btn-counter {
+    -moz-box-shadow: 0px 1px 0px 0px #1c1b18;
+    -webkit-box-shadow: 0px 1px 0px 0px #1c1b18;
+    box-shadow: 0px 1px 0px 0px #1c1b18;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #eae0c2), color-stop(1, #ccc2a6));
+    background:-moz-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+    background:-webkit-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+    background:-o-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+    background:-ms-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+    background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae0c2', endColorstr='#ccc2a6',GradientType=0);
+    background-color:#eae0c2;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    border:2px solid #333029;
+    display:inline-block;
+    cursor:pointer;
+    color:#505739;
+    font-family:Arial;
+    font-size:30px;
+    font-weight:bold;
+    padding:10px 18px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+}
+.btn-counter:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ccc2a6), color-stop(1, #eae0c2));
+    background:-moz-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+    background:-webkit-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+    background:-o-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+    background:-ms-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+    background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccc2a6', endColorstr='#eae0c2',GradientType=0);
+    background-color:#ccc2a6;
+}
+.btn-counter:active {
+    position:relative;
+    top:1px;
+}
+
+.roll-btn {
+    -moz-box-shadow: 0px 1px 0px 0px #1c1b18;
+    -webkit-box-shadow: 0px 1px 0px 0px #1c1b18;
+    box-shadow: 0px 1px 0px 0px #1c1b18;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fc4151), color-stop(1, #d12e2e));
+    background:-moz-linear-gradient(top, #fc4151 5%, #d12e2e 100%);
+    background:-webkit-linear-gradient(top, #fc4151 5%, #d12e2e 100%);
+    background:-o-linear-gradient(top, #fc4151 5%, #d12e2e 100%);
+    background:-ms-linear-gradient(top, #fc4151 5%, #d12e2e 100%);
+    background:linear-gradient(to bottom, #fc4151 5%, #d12e2e 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc4151', endColorstr='#d12e2e',GradientType=0);
+    background-color:#fc4151;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    border:2px solid #333029;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:30px;
+    font-weight:bold;
+    padding:10px 18px;
+    text-decoration:none;
+}
+.roll-btn:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d12e2e), color-stop(1, #fc4151));
+    background:-moz-linear-gradient(top, #d12e2e 5%, #fc4151 100%);
+    background:-webkit-linear-gradient(top, #d12e2e 5%, #fc4151 100%);
+    background:-o-linear-gradient(top, #d12e2e 5%, #fc4151 100%);
+    background:-ms-linear-gradient(top, #d12e2e 5%, #fc4151 100%);
+    background:linear-gradient(to bottom, #d12e2e 5%, #fc4151 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d12e2e', endColorstr='#fc4151',GradientType=0);
+    background-color:#d12e2e;
+}
+.roll-btn:active {
+    position:relative;
+    top:1px;
+}
+
+input{
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    font-weight:bold;
+    padding:10px 18px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+button:focus, input:focus {outline:0;}
+
+@media (max-width: 1024px){
+  .controls-box{
+    padding: 0;
+  }  
+  .btn-counter,.roll-btn {padding:10px;font-size: 14px;border-radius: 0;}
+  input {padding:10px;font-size:20px;}
+}
